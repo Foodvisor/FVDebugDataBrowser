@@ -1,0 +1,16 @@
+PODS:
+  - FVDebugDataBrowser (0.1.0)
+
+DEPENDENCIES:
+  - FVDebugDataBrowser (from `../`)
+
+EXTERNAL SOURCES:
+  FVDebugDataBrowser:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FVDebugDataBrowser: 9186017ca0129ea86d5d5a924fde0eae0327a4b5
+
+PODFILE CHECKSUM: 505507cf906004f49fd8cfc661aa448632d8baa3
+
+COCOAPODS: 1.5.3
