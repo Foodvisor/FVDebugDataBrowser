@@ -20,7 +20,7 @@ FVDebugDataBrowser is a dev/debug tool that allow you to read the content inside
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Fong Zhou' => 'fong.zhou75@gmail.com' }
   s.source           = { :git => 'https://github.com/Foodvisor/FVDebugDataBrowser.git', :tag => s.version.to_s }
-  s.swift_version    = '3.3'
+  s.swift_version    = '4.0'
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10'

@@ -16,7 +16,7 @@ extension NSManagedObject {
     /// This is a simple one-line human comprehensible text
     ///
     /// - Returns: Title to be displayed
-    func FVDescription() -> String {
+    open func FVDescription() -> String {
         if let name = value(forKey: "name") {
             return "\(name)"
         }
