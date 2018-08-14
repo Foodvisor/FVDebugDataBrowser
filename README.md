@@ -4,9 +4,9 @@
 [![License](https://img.shields.io/cocoapods/l/FVDebugDataBrowser.svg?style=flat)](https://cocoapods.org/pods/FVDebugDataBrowser)
 [![Platform](https://img.shields.io/cocoapods/p/FVDebugDataBrowser.svg?style=flat)](https://cocoapods.org/pods/FVDebugDataBrowser)
 
-![alt tag](https://raw.githubusercontent.com/foodvisor/FVDebugDataBrowser/dev/demo2.gif)
+![alt tag](https://raw.githubusercontent.com/foodvisor/FVDebugDataBrowser/master/demo.gif)
 
-FVDebugDataBrowser is a dev/debug tool that allow you to read the content inside the app
+FVDebugDataBrowser is a dev/debug tool that allows you to read the content inside an app
 
 ## Requirements
 - iOS 8.0+
