@@ -10,7 +10,13 @@ import UIKit
 import FVDebugDataBrowser
 import CoreData
 
-// Godfather view controller
+extension UIWindow {
+    open override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
+        guard motion == .motionShake else { return }
+        FVDebugDataBrowser.display()
+    }
+}
+
 class ViewController: UIViewController {
 
     var coreDataLoaded: Bool {
@@ -27,6 +33,7 @@ class ViewController: UIViewController {
 
         loadCoreData()
         FVDebugDataBrowser.setup()
+        FVDebugDataBrowser.logEvent("viewDidLoad", value: "event")
         FVDebugDataBrowser.addPersistenceContainer("FVDebugDataBrowser")
     }
 
@@ -50,11 +57,6 @@ class ViewController: UIViewController {
         }
         do { try context.save() }
         catch { }
-    }
-
-    @IBAction func didButtonPressed(_ sender: Any) {
-        FVDebugDataBrowser.logEvent("UserDidClickOnButton", value: "event")
-        FVDebugDataBrowser.display()
     }
 
     override func didReceiveMemoryWarning() {
@@ -87,4 +89,3 @@ class ViewController: UIViewController {
     ]
 
 }
-

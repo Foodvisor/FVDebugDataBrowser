@@ -83,7 +83,7 @@ extension FVDebugUserdefaultViewController: UISearchResultsUpdating {
             filterdValues = userValues
         }
         else {
-//            filterdValues = userValues.filter({ $0.key.score(word: text) > 0.3 })
+            filterdValues = userValues.filter({ $0.key.score(word: text) > 0.3 })
         }
 
         tableView.reloadData()
