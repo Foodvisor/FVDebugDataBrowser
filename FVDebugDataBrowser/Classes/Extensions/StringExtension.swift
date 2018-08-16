@@ -78,11 +78,10 @@ extension String {
         for i in 0 ..< wordLength {
             // Find next first case-insensitive match of word's i-th character.
             // The search in "string" begins at "startAt".
-
             if let range = lString.range(
                 of: lWord.charStrAt(i),
                 options: [.caseInsensitive, .diacriticInsensitive],
-                range: Range<String.Index>(startAt..<lString.endIndex),
+                range: startAt..<lString.endIndex,
                 locale: nil
                 ) {
 

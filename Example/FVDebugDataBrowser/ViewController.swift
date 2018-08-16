@@ -11,7 +11,7 @@ import FVDebugDataBrowser
 import CoreData
 
 extension UIWindow {
-    open override func motionBegan(_ motion: UIEventSubtype, with event: UIEvent?) {
+    open override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         guard motion == .motionShake else { return }
         FVDebugDataBrowser.display()
     }

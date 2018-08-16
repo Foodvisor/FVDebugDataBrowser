@@ -18,7 +18,7 @@ class FVDebugViewController: FVDebugBaseViewController {
         super.viewDidLoad()
 
         navigationItem.title = "FVDebugger"
-        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "close", style: UIBarButtonItemStyle.done, target: self, action: #selector(closeDebugger))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "close", style: UIBarButtonItem.Style.done, target: self, action: #selector(closeDebugger))
 
         systemInfoLabel.text = configureVersionsString()
     }
